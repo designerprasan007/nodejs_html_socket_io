@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp_Socket</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../../socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="application/javascript" src="https://static.plenigo.com/static_resources/javascript/mT7Hm12c9TfScxK156Fx/plenigo_sdk.min.js" data-client-paywall="true" data-paywall-type="show" data-paywall-source-element-id="sourceId" data-paywall-target-element-id="targetId"
+        data-product-id="mT7Hm12c9TfScxK156Fx" data-test-mode="true">
+    </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: #BDBAB9;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+        
+        ul {
+            height: 200px;
+            overflow: scroll;
+            background-color: white;
+        }
+        
+        .bg-info {
+            background-color: white !important;
+        }
+        
+        #tabs {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            background-color: antiquewhite;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f9e5bc;
+            overflow: auto;
+            transition: 0.5s;
+            padding-top: 60px;
+            @media only screen and (max-width: 767px) {
+                .sidenav {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .sidenav p {
+            position: absolute;
+            top: 20px;
+            left: 5px;
+            font-size: 20px;
+        }
+        
+        .comment_area {
+            height: 85%;
+        }
+        
+        .inline {
+            overflow: hidden;
+        }
+        
+        .comment_section {
+            padding-top: 80%;
+        }
+        
+        .tint {
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .doller_icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .pl_text_box {
+            width: 20px;
+            height: 15px;
+        }
+        
+        .pin {
+            float: right;
+        }
+        
+        .pl_show {
+            border-radius: 20px;
+            float: right;
+            background-color: white;
+        }
+        
+        #displayvalue {
+            border: 1px solid white;
+            padding: 20px;
+            margin: 5px 5px;
+            color: #000;
+        }
+        
+        .pin-btn {
+            width: 100px;
+            position: relative;
+            left: 40%;
+            margin: 10px;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="col-lg-10 offset-lg-1">
+
+                <!-- <div v-if="ready">
+                        <p v-for="user in info">
+                            {{user.username}} {{user.type}}
+                        </p>
+                    </div> -->
+
+                <div v-if="!ready">
+                    <h4>Enter your username</h4>
+                    <form @submit.prevent="addUser">
+                        <div class="form-group row">
+                            <input type="text" class="form-control col-9" v-model="username" placeholder="Enter username here">
+                            <input type="submit" value="Join" class="btn btn-sm btn-info ml-1">
+
+                        </div>
+                    </form>
+                </div>
+                <!-- <h2 v-else>{{username}}</h2> -->
+                <div class="card bg-info" v-if="ready">
+                    <div class="header" style="background-color: white;">
+                        <h1 style="margin-bottom: 0px!important;"> LOGO</h1>
+                    </div>
+                    <div class="video_playing">
+                        <iframe src="http://members.truetrader.net/stream/play/" autoplay></iframe>
+                    </div>
+                    <section class="py-3" style="background-color: #ABA3A1;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="nav-item nav-link " style="color: white">live Chat</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row ">
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-6">
+                                        <article class="row no-gutters bg-light rounded-pill">
+                                            <section class="col-md-5 text-right">
+                                                <img src="http://dev.conitor.in/Benito/chat/ChatAppWithVue_Socket.io/assets/doller_icon.svg" class="doller_icon">
+                                                <label class="px-3">P&L</label>
+                                            </section>
+                                            <section class="col-md-7">
+                                                <template class="list-group-item p-3" v-for="msgpl in Plmessages">
+                                                    <strong>:{{msgpl.msgpl}}</strong>
+                                                    </template>
+                                            </section>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs nav-fill" role="tablist" id="tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#public_user" role="tab" data-toggle="tab">Public User</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#premium_user" role="tab" data-toggle="tab">Premium Members</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="displayvalue" style="background-color: bisque;">
+                            <template class="list-group-item p-3" v-model="pinnedmsg" v-for="msgpin in pinned">
+                                <strong>:{{msgpin.msgpin}}</strong>
+                                </template>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in active" id="public_user">
+                            <div id="GetText">
+                                <ul class="list-group list-group-flush text-right container_base" v-chat-scroll>
+                                    <li class="list-group-item" v-for="message in messages" @click="Pinchat">
+                                        <span :class="{'float-left':message.type === 1}">
+                                        {{message.user}}
+                                        :{{message.message}}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <form @submit.prevent="send">
+                                    <medium v-if="typing" name="typing" class="text-black" style="color: red">{{typing}} is typing
+                                    </medium>
+                                    <div class="form-group">
+                                        <input type="text" style="background-color: #ABA3A1" id="textarea" class="form-control" v-model="newMessage" placeholder="Enter message">
+                                        <button v-on:click="Check">check</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="premium_user">
+                            <ul class="list-group list-group-flush text-right container_base" v-chat-scroll>
+                                <li class="list-group-item" v-for="message1 in messages1">
+                                    <span :class="{'float-left':message1.type === 1}">
+                                            {{message1.user}}
+                                            :{{message1.message1}}
+                                            </span>
+                                </li>
+                            </ul>
+                            <form @submit.prevent="send1">
+                                <medium v-if="typing" name="typing" class="text-black" style="color: red">{{typing}} is typing
+                                </medium>
+                                <div class="form-group">
+                                    <input type="text" style="background-color: #ABA3A1" id="textarea1" class="form-control" v-model="newMessage1" placeholder="Enter message">
+                                    <button v-on:click="Check">check</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <form @submit.prevent="PL">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="PL">P&L</label>
+                                <input type="text" v-model="NewPl" class="form-control" id="PL" placeholder="Enter text">
+                            </div>
+                            <div class="form-group col-md-6 flot-right">
+                                <section class="float-right px-5">
+                                    <label for="pinchat">Pinchat</label> <br>
+                                    <input type="checkbox" id="pincheck" onclick="activatePinchat()">
+                                </section>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <button style="position: fixed; left: 10%; bottom: 1%;" onclick="openNav()"><i
+      class="far fa-comment"></i>signup</button>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+    <div id="mySidenav" class="sidenav tint text-white">
+        <div class="row">
+            <p>Page/Live Stream</p>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">
+                <button type="button" class="btn btn-outline-danger rounded-pill btn-lg" style="font-size: 15">&times;</button>
+            </a>
+        </div>
+        <div class="container comment_area text-center">
+            <h3 class=" comment_section text-dark">
+                o comments still &#128551;</h3>
+            <h5 class="text-muted">You can @mention someone to start a conversation!</h5>
+        </div>
+        <h5 class="text-center">To leave a comment on this prototype</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-sm-4 pl-5">
+                    <a href="http://members.truetrader.net:8000/login_frontend.php"><button class="btn btn-outline-success btn-lg">Login</button></a>
+                </div>
+                <div class="col-md-sm-4 pl-5 pt-4">
+                    <h5 class="text-center pl-5">OR</h5>
+                </div>
+                <div class="col-md-sm-4 pl-5">
+                    <a href="http://members.truetrader.net:8000/signup_frontend.php"><button class="btn btn-success btn-lg">Signup</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-chat-scroll@1.3.6/dist/vue-chat-scroll.min.js"></script>
+
+<script>
+    var logedin = app.username;
+    var session = "me";
+    var socket = io();
+    let vue = new Vue({
+        el: '#app',
+
+        data: {
+            newMessage: null,
+            newMessage1: null,
+            newMessage2: null,
+            messages: [],
+            messages1: [],
+            messages2: [],
+            typing: false,
+            username: null,
+            ready: false,
+            info: [],
+            connections: 0,
+            pl_number: null,
+            NewPl: null,
+            Plmessages: [],
+            plmessages: null,
+            user_type: '1',
+            userid: 0,
+            selectedItem: null,
+            pinned: [],
+            pinnedmsg: null,
+        },
+
+        created() {
+            window.onbeforeunload = () => {
+                socket.emit('leave', this.username);
+            }
+
+            socket.on('chat-message', (data) => {
+                this.messages.push({
+                    message: data.message,
+                    type: 1,
+                    user: data.user,
+                });
+            });
+            socket.on('chat-message1', (data) => {
+                this.messages1.push({
+                    message1: data.message1,
+                    type: 1,
+                    user: data.user,
+                });
+            });
+
+
+            socket.on('pl-messages', (data) => {
+                this.Plmessages.push({
+                    msgpl: data.msgpl,
+                    type: 1,
+                    user: data.user,
+                });
+            });
+            socket.on('pin', (data) => {
+                this.pinned.push({
+                    msgpin: data.msgpin,
+                });
+            });
+
+            socket.on('typing', (data) => {
+                this.typing = data;
+            });
+
+
+            socket.on('stopTyping', () => {
+                this.typing = false;
+            });
+
+            socket.on('joined', (data) => {
+                this.info.push({
+                    username: data,
+                    type: 'joined'
+                });
+
+                setTimeout(() => {
+                    this.info = [];
+                }, 5000);
+            });
+
+            socket.on('leave', (data) => {
+                this.info.push({
+                    username: data,
+                    type: 'left'
+                });
+
+                setTimeout(() => {
+                    this.info = [];
+                }, 5000);
+            });
+
+            socket.on('connections', (data) => {
+                this.connections = data;
+            });
+        },
+
+        watch: {
+            newMessage(value) {
+                value ? socket.emit('typing', this.username) : socket.emit('stopTyping')
+            },
+            newMessage1(value) {
+                value ? socket.emit('typing', this.username) : socket.emit('stopTyping')
+            }
+        },
+
+        methods: {
+            Pinchat(event) {
+                var pinned = event.target.innerHTML
+                    // alert(pinned)
+                this.pinned.push({
+                    msgpin: this.pinnedmsg,
+                    type: 0,
+                    user: session,
+                })
+                socket.emit('pin', {
+                    msgpin: this.pinnedmsg,
+                    user: this.username
+                });
+                this.pinnedmsg = null;
+            },
+            PL() {
+                this.Plmessages.push({
+                    msgpl: this.NewPl,
+                    type: 0,
+                    user: session,
+                })
+                socket.emit('pl-messages', {
+                    msgpl: this.NewPl,
+                    user: this.username
+                });
+                this.NewPl = null;
+
+            },
+            send() {
+                // if (logedin !== session) {
+                this.messages.push({
+                    message: this.newMessage,
+                    type: 0,
+                    user: session,
+                });
+                socket.emit('chat-message', {
+                    message: this.newMessage,
+                    user: this.username
+                });
+                this.newMessage = null;
+                // } else {
+                //     alert("hey it seems your not logged in click on the ok button to login");
+                //     window.location = "http://dev.conitor.in/Benito/chat/ChatAppWithVue_Socket.io/auth/login_frontend.php";
+                // }
+            },
+            send1() {
+                // if (logedin !== session) {
+                this.messages1.push({
+                    message1: this.newMessage1,
+                    type: 0,
+                    user: session,
+                });
+
+                socket.emit('chat-message1', {
+                    message1: this.newMessage1,
+                    user: this.username
+                });
+                this.newMessage1 = null;
+                // } else {
+                //     alert("hey it seems your not logged in click on the ok button to login");
+                //     window.location = "http://dev.conitor.in/Benito/chat/ChatAppWithVue_Socket.io/auth/login_frontend.php";
+                // }
+            },
+            addUser() {
+                this.ready = true;
+                socket.emit('joined', this.username)
+            },
+            Check: function(event) {}
+        },
+    });
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "30%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+    // activatePinchat() {
+    //     var checkBox = document.getElementById("pincheck");
+    //     if (checkBox.checked == true) {
+    //         document.getElementById("displayvalue").style.display = "block";
+    //         this.pincheckmsg.push({
+    //             pinmsg: this.pincheck,
+    //             type: 0,
+    //             user: session,
+    //         })
+    //         socket.emit('pinmsgs', {
+    //             pinmsg: this.pincheck,
+    //             user: this.username
+    //         });
+    //         this.pincheck = null;
+
+    //     }
+    // },
+</script>
+
+</html>

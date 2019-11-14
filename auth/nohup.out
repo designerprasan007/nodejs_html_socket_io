@@ -1,0 +1,216 @@
+[Thu Nov  7 04:59:17 2019] 115.99.2.243:58558 [200]: /login_frontend.php
+[Thu Nov  7 04:59:27 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/Benito/auth/login_backend.php on line 24
+[Thu Nov  7 04:59:27 2019] 115.99.2.243:58654 [200]: /login_backend.php
+[Thu Nov  7 05:47:16 2019] 172.104.92.166:37520 [404]: / - No such file or directory
+[Thu Nov  7 06:27:24 2019] 115.99.109.6:55932 [200]: /signup_frontend.php
+[Thu Nov  7 07:06:05 2019] 5.178.86.74:14117 [404]: http://check.best-proxies.ru/azenv.php?s=157311036523896PC265009983708000 - No such file or directory
+[Thu Nov  7 07:06:10 2019] 5.178.86.74:6625 Invalid request (Malformed HTTP request)
+[Thu Nov  7 07:06:15 2019] 5.178.86.74:14481 Invalid request (Malformed HTTP request)
+[Thu Nov  7 07:06:20 2019] 5.178.86.78:47685 Invalid request (Malformed HTTP request)
+[Thu Nov  7 07:28:46 2019] 27.7.26.173:57830 [200]: /signup_frontend.php
+[Thu Nov  7 07:29:14 2019] PHP Notice:  Undefined index: PATH_INFO in /var/www/html/Benito/auth/signup_backend.php on line 10
+[Thu Nov  7 07:29:14 2019] 27.7.26.173:57864 [200]: /signup_backend.php
+[Thu Nov  7 07:29:15 2019] 27.7.26.173:57868 [200]: /login_frontend.php
+[Thu Nov  7 07:29:27 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/Benito/auth/login_backend.php on line 24
+[Thu Nov  7 07:29:27 2019] 27.7.26.173:57872 [200]: /login_backend.php
+[Thu Nov  7 11:06:26 2019] 5.178.86.78:27223 [404]: http://check.best-proxies.ru/azenv.php?s=157312478665179PC265009983708000 - No such file or directory
+[Thu Nov  7 11:06:32 2019] 5.178.86.76:40953 Invalid request (Malformed HTTP request)
+[Thu Nov  7 11:06:37 2019] 5.178.86.76:21607 Invalid request (Malformed HTTP request)
+[Thu Nov  7 11:06:42 2019] 5.178.86.74:60303 Invalid request (Malformed HTTP request)
+[Thu Nov  7 13:01:18 2019] 64.233.173.158:54217 [200]: /login_frontend.php
+[Thu Nov  7 13:01:20 2019] 64.233.173.157:50226 [404]: /favicon.ico - No such file or directory
+[Thu Nov  7 13:01:28 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/Benito/auth/login_backend.php on line 24
+[Thu Nov  7 13:01:28 2019] 27.7.26.173:39699 [200]: /login_backend.php
+[Thu Nov  7 13:01:34 2019] 64.233.173.157:54698 [200]: /login_frontend.php
+[Thu Nov  7 13:01:48 2019] 27.7.26.173:39708 [200]: /login_backend.php
+[Thu Nov  7 13:01:55 2019] 64.233.173.158:47064 [200]: /login_frontend.php
+[Thu Nov  7 13:02:36 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/Benito/auth/login_backend.php on line 24
+[Thu Nov  7 13:02:36 2019] 27.7.26.173:39715 [200]: /login_backend.php
+[Thu Nov  7 15:06:26 2019] 5.178.86.74:25449 [404]: http://check.best-proxies.ru/azenv.php?s=157313918683121PC265009983708000 - No such file or directory
+[Thu Nov  7 15:06:31 2019] PHP Fatal error:  Possible integer overflow in memory allocation (1 * 18446744073709551615 + 1) in Unknown on line 0
+PHP 7.3.11-1+ubuntu18.04.1+deb.sury.org+1 Development Server started at Thu Nov  7 04:57:34 2019
+Listening on http://157.245.80.125:8000
+Document root is /var/www/html/Benito/auth
+Press Ctrl-C to quit.
+[Thu Nov  7 15:10:00 2019] 27.7.26.173:58002 [200]: /signup_frontend.php
+[Thu Nov  7 15:10:02 2019] 27.7.26.173:58004 [404]: /favicon.ico - No such file or directory
+[Thu Nov  7 15:11:48 2019] 27.7.26.173:58088 [200]: /signup_frontend.php
+[Thu Nov  7 15:12:04 2019] PHP Notice:  Undefined index: PATH_INFO in /var/www/html/stream/auth/signup_backend.php on line 10
+[Thu Nov  7 15:12:04 2019] 27.7.26.173:58098 [200]: /signup_backend.php
+[Thu Nov  7 15:12:04 2019] 27.7.26.173:58100 [200]: /login_frontend.php
+[Thu Nov  7 15:12:15 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Thu Nov  7 15:12:15 2019] 27.7.26.173:58112 [200]: /login_backend.php
+[Thu Nov  7 15:12:28 2019] 27.7.26.173:58130 [200]: /signup_frontend.php
+[Thu Nov  7 15:12:57 2019] PHP Notice:  Undefined index: PATH_INFO in /var/www/html/stream/auth/signup_backend.php on line 10
+[Thu Nov  7 15:12:57 2019] 27.7.26.173:58144 [200]: /signup_backend.php
+[Thu Nov  7 15:13:00 2019] 27.7.26.173:58148 [200]: /login_frontend.php
+[Thu Nov  7 15:14:07 2019] 27.7.26.173:58154 [200]: /login_frontend.php
+[Thu Nov  7 15:20:19 2019] Failed to listen on 157.245.80.125:8000 (reason: Address already in use)
+[Thu Nov  7 15:20:25 2019] 27.7.26.173:40716 [200]: /login_frontend.php
+[Thu Nov  7 15:20:26 2019] 27.7.26.173:40718 [404]: /favicon.ico - No such file or directory
+[Thu Nov  7 15:20:38 2019] 27.7.26.173:40736 [200]: /signup_frontend.php
+[Thu Nov  7 15:22:58 2019] PHP Notice:  Undefined index: PATH_INFO in /var/www/html/stream/auth/signup_backend.php on line 10
+[Thu Nov  7 15:22:58 2019] 27.7.26.173:40798 [200]: /signup_backend.php
+[Thu Nov  7 15:22:59 2019] 27.7.26.173:40802 [200]: /login_frontend.php
+[Thu Nov  7 15:23:11 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Thu Nov  7 15:23:11 2019] 27.7.26.173:40814 [200]: /login_backend.php
+[Thu Nov  7 15:29:58 2019] 73.54.203.170:58044 [404]: / - No such file or directory
+[Thu Nov  7 15:29:58 2019] 73.54.203.170:58045 [404]: /robots.txt - No such file or directory
+[Thu Nov  7 15:29:58 2019] 73.54.203.170:58046 [404]: /robots.txt - No such file or directory
+[Thu Nov  7 15:29:58 2019] 73.54.203.170:58048 [404]: /favicon.ico - No such file or directory
+[Thu Nov  7 16:03:20 2019] 73.54.203.170:59970 [200]: /signup_frontend.php
+[Thu Nov  7 16:03:21 2019] 73.54.203.170:59971 [404]: /favicon.ico - No such file or directory
+[Thu Nov  7 19:06:31 2019] 85.119.151.254:5669 [404]: http://check.best-proxies.ru/azenv.php?s=157315359179121PC265009983708000 - No such file or directory
+[Thu Nov  7 19:06:36 2019] 85.119.151.253:59571 Invalid request (Malformed HTTP request)
+[Thu Nov  7 19:06:41 2019] 85.119.151.252:25537 Invalid request (Malformed HTTP request)
+[Thu Nov  7 19:06:46 2019] 85.119.151.253:61561 Invalid request (Malformed HTTP request)
+[Thu Nov  7 23:06:25 2019] 85.119.151.254:48957 [404]: http://check.best-proxies.ru/azenv.php?s=157316798517513PC265009983708000 - No such file or directory
+[Thu Nov  7 23:06:30 2019] 85.119.151.250:9991 Invalid request (Malformed HTTP request)
+[Thu Nov  7 23:06:35 2019] 85.119.151.254:44239 Invalid request (Malformed HTTP request)
+[Thu Nov  7 23:06:41 2019] 85.119.151.252:24917 Invalid request (Malformed HTTP request)
+[Fri Nov  8 03:06:31 2019] 85.119.151.254:29467 [404]: http://check.best-proxies.ru/azenv.php?s=157318239173940PC265009983708000 - No such file or directory
+[Fri Nov  8 03:06:36 2019] 85.119.151.252:62741 Invalid request (Malformed HTTP request)
+[Fri Nov  8 03:06:41 2019] 85.119.151.251:60073 Invalid request (Malformed HTTP request)
+[Fri Nov  8 03:06:46 2019] 85.119.151.252:43259 Invalid request (Malformed HTTP request)
+[Fri Nov  8 05:02:40 2019] 116.75.117.52:39724 [200]: /signup_frontend.php
+[Fri Nov  8 05:02:42 2019] 116.75.117.52:39722 [404]: /favicon.ico - No such file or directory
+[Fri Nov  8 05:08:05 2019] 116.75.117.52:39864 [200]: /signup_frontend.php
+[Fri Nov  8 05:08:08 2019] 116.75.117.52:39862 [404]: /favicon.ico - No such file or directory
+[Fri Nov  8 05:08:12 2019] 116.75.117.52:39868 [200]: /login_frontend.php
+[Fri Nov  8 05:29:56 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Fri Nov  8 05:29:56 2019] 116.75.117.52:40276 [200]: /login_backend.php
+[Fri Nov  8 05:46:00 2019] 116.75.117.52:40452 [200]: /login_frontend.php
+[Fri Nov  8 06:34:15 2019] 116.75.117.52:41446 [404]: /login_frontend.php - No such file or directory
+[Fri Nov  8 06:34:35 2019] 116.75.117.52:41466 [200]: /login_frontend.php
+[Fri Nov  8 06:35:33 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Fri Nov  8 06:35:33 2019] 116.75.117.52:41524 [200]: /login_backend.php
+[Fri Nov  8 07:06:27 2019] 85.119.151.252:54123 [404]: http://check.best-proxies.ru/azenv.php?s=157319678727400PC265009983708000 - No such file or directory
+[Fri Nov  8 07:06:32 2019] 85.119.151.254:34663 Invalid request (Malformed HTTP request)
+[Fri Nov  8 07:06:37 2019] 85.119.151.253:35695 Invalid request (Malformed HTTP request)
+[Fri Nov  8 07:06:42 2019] 85.119.151.254:21211 Invalid request (Malformed HTTP request)
+[Fri Nov  8 07:38:33 2019] 116.75.117.52:42992 [200]: /login_frontend.php
+[Fri Nov  8 07:38:53 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Fri Nov  8 07:38:53 2019] 116.75.117.52:43130 [200]: /login_backend.php
+[Fri Nov  8 08:41:21 2019] 116.75.117.52:35466 [200]: /signup_frontend.php
+[Fri Nov  8 11:06:26 2019] 85.119.151.250:26731 [404]: http://check.best-proxies.ru/azenv.php?s=157321118631187PC265009983708000 - No such file or directory
+[Fri Nov  8 11:06:31 2019] 85.119.151.250:11865 Invalid request (Malformed HTTP request)
+[Fri Nov  8 11:06:36 2019] 85.119.151.251:9259 Invalid request (Malformed HTTP request)
+[Fri Nov  8 11:06:41 2019] 85.119.151.252:5571 Invalid request (Malformed HTTP request)
+[Fri Nov  8 13:22:58 2019] 27.7.30.232:43636 [200]: /signup_frontend.php
+[Fri Nov  8 13:23:00 2019] 27.7.30.232:43634 [404]: /favicon.ico - No such file or directory
+[Fri Nov  8 13:56:33 2019] 74.125.212.24:42814 [200]: /signup_frontend.php
+[Fri Nov  8 13:56:33 2019] 74.125.212.24:52115 [404]: /favicon.ico - No such file or directory
+[Fri Nov  8 14:52:15 2019] 139.162.79.87:47388 [404]: / - No such file or directory
+[Fri Nov  8 15:01:57 2019] 74.125.212.28:51603 [404]: /favicon.ico - No such file or directory
+[Fri Nov  8 15:06:27 2019] 85.119.151.253:20407 [404]: http://check.best-proxies.ru/azenv.php?s=157322558771234PC265009983708000 - No such file or directory
+[Fri Nov  8 15:06:32 2019] 85.119.151.250:61469 Invalid request (Malformed HTTP request)
+[Fri Nov  8 15:06:37 2019] 85.119.151.254:56913 Invalid request (Malformed HTTP request)
+[Fri Nov  8 15:06:43 2019] 85.119.151.250:42931 Invalid request (Malformed HTTP request)
+[Fri Nov  8 19:06:41 2019] 109.234.153.133:28575 [404]: http://check.best-proxies.ru/azenv.php?s=157324000193555PC265009983708000 - No such file or directory
+[Fri Nov  8 19:06:46 2019] 109.234.153.132:6107 Invalid request (Malformed HTTP request)
+[Fri Nov  8 19:06:51 2019] 109.234.153.133:53411 Invalid request (Malformed HTTP request)
+[Fri Nov  8 19:06:57 2019] 109.234.153.130:40175 Invalid request (Malformed HTTP request)
+[Fri Nov  8 23:06:25 2019] 109.234.153.130:49873 [404]: http://check.best-proxies.ru/azenv.php?s=157325438573452PC265009983708000 - No such file or directory
+[Fri Nov  8 23:06:31 2019] 109.234.153.133:19849 Invalid request (Malformed HTTP request)
+[Fri Nov  8 23:06:36 2019] 109.234.153.133:19375 Invalid request (Malformed HTTP request)
+[Fri Nov  8 23:06:41 2019] 109.234.153.133:17213 Invalid request (Malformed HTTP request)
+[Sat Nov  9 03:06:26 2019] 109.234.153.133:61577 [404]: http://check.best-proxies.ru/azenv.php?s=157326878609644PC265009983708000 - No such file or directory
+[Sat Nov  9 03:06:31 2019] 109.234.153.130:37207 Invalid request (Malformed HTTP request)
+[Sat Nov  9 03:06:36 2019] 109.234.153.132:47981 Invalid request (Malformed HTTP request)
+[Sat Nov  9 03:06:41 2019] 109.234.153.130:19677 Invalid request (Malformed HTTP request)
+[Sat Nov  9 04:25:35 2019] 27.7.25.67:52482 [404]: /favicon.ico - No such file or directory
+[Sat Nov  9 04:25:38 2019] 74.125.212.24:47489 [200]: /signup_frontend.php
+[Sat Nov  9 04:25:38 2019] 74.125.212.28:42127 [404]: /favicon.ico - No such file or directory
+[Sat Nov  9 07:06:27 2019] 109.234.153.134:32619 [404]: http://check.best-proxies.ru/azenv.php?s=157328318781405PC265009983708000 - No such file or directory
+[Sat Nov  9 07:06:32 2019] 109.234.153.133:42005 Invalid request (Malformed HTTP request)
+[Sat Nov  9 07:06:37 2019] 109.234.153.134:9745 Invalid request (Malformed HTTP request)
+[Sat Nov  9 07:06:42 2019] 109.234.153.130:41645 Invalid request (Malformed HTTP request)
+[Sat Nov  9 11:06:26 2019] 109.234.153.132:45745 [404]: http://check.best-proxies.ru/azenv.php?s=157329758625626PC265009983708000 - No such file or directory
+[Sat Nov  9 11:06:31 2019] 109.234.153.134:32135 Invalid request (Malformed HTTP request)
+[Sat Nov  9 11:06:37 2019] 109.234.153.132:39327 Invalid request (Malformed HTTP request)
+[Sat Nov  9 11:06:42 2019] 109.234.153.130:61855 Invalid request (Malformed HTTP request)
+[Sat Nov  9 11:27:41 2019] 178.137.82.62:30959 Invalid request (Malformed HTTP request)
+[Sat Nov  9 15:06:26 2019] 109.234.153.132:64703 [404]: http://check.best-proxies.ru/azenv.php?s=157331198677767PC265009983708000 - No such file or directory
+[Sat Nov  9 15:06:32 2019] 109.234.153.130:48399 Invalid request (Malformed HTTP request)
+[Sat Nov  9 15:06:37 2019] 109.234.153.131:10259 Invalid request (Malformed HTTP request)
+[Sat Nov  9 15:06:42 2019] 109.234.153.130:63629 Invalid request (Malformed HTTP request)
+[Sat Nov  9 16:53:49 2019] 89.248.174.3:41934 [404]: / - No such file or directory
+[Sat Nov  9 17:02:51 2019] 193.188.22.216:64642 Invalid request (Malformed HTTP request)
+[Sat Nov  9 19:06:27 2019] 85.119.151.250:23673 [404]: http://check.best-proxies.ru/azenv.php?s=157332638777770PC265009983708000 - No such file or directory
+[Sat Nov  9 19:06:32 2019] 85.119.151.253:13267 Invalid request (Malformed HTTP request)
+[Sat Nov  9 19:06:37 2019] 85.119.151.254:44081 Invalid request (Malformed HTTP request)
+[Sat Nov  9 19:06:42 2019] 85.119.151.254:33835 Invalid request (Malformed HTTP request)
+[Sat Nov  9 23:06:26 2019] 85.119.151.253:19803 [404]: http://check.best-proxies.ru/azenv.php?s=157334078671675PC265009983708000 - No such file or directory
+[Sat Nov  9 23:06:31 2019] 85.119.151.254:3563 Invalid request (Malformed HTTP request)
+[Sat Nov  9 23:06:36 2019] 85.119.151.253:13151 Invalid request (Malformed HTTP request)
+[Sat Nov  9 23:06:41 2019] 85.119.151.254:35463 Invalid request (Malformed HTTP request)
+[Sat Nov  9 23:50:57 2019] 51.91.212.79:57372 Invalid request (Unsupported SSL request)
+[Sat Nov  9 23:55:17 2019] 51.91.212.79:54280 Invalid request (Unsupported SSL request)
+[Sun Nov 10 03:06:27 2019] 85.119.151.253:34489 [404]: http://check.best-proxies.ru/azenv.php?s=157335518793126PC265009983708000 - No such file or directory
+[Sun Nov 10 03:06:32 2019] 85.119.151.254:61629 Invalid request (Malformed HTTP request)
+[Sun Nov 10 03:06:37 2019] 85.119.151.250:15493 Invalid request (Malformed HTTP request)
+[Sun Nov 10 03:06:42 2019] 85.119.151.254:11161 Invalid request (Malformed HTTP request)
+[Sun Nov 10 06:04:50 2019] 176.114.238.33:39463 [404]: /Pages/login.htm - No such file or directory
+[Sun Nov 10 06:51:41 2019] 104.152.52.36:47413 Invalid request (Connection reset by peer)
+[Sun Nov 10 07:06:26 2019] 85.119.151.254:48565 [404]: http://check.best-proxies.ru/azenv.php?s=157336958625563PC265009983708000 - No such file or directory
+[Sun Nov 10 07:06:31 2019] 85.119.151.251:26845 Invalid request (Malformed HTTP request)
+[Sun Nov 10 07:06:36 2019] 85.119.151.252:33993 Invalid request (Malformed HTTP request)
+[Sun Nov 10 07:06:41 2019] 85.119.151.253:1125 Invalid request (Malformed HTTP request)
+[Sun Nov 10 11:06:26 2019] 85.119.151.254:60203 [404]: http://check.best-proxies.ru/azenv.php?s=157338398623117PC265009983708000 - No such file or directory
+[Sun Nov 10 11:06:31 2019] 85.119.151.251:12643 Invalid request (Malformed HTTP request)
+[Sun Nov 10 11:06:37 2019] 85.119.151.254:20833 Invalid request (Malformed HTTP request)
+[Sun Nov 10 11:06:42 2019] 85.119.151.252:15107 Invalid request (Malformed HTTP request)
+[Sun Nov 10 15:06:27 2019] 85.119.151.254:12777 [404]: http://check.best-proxies.ru/azenv.php?s=157339838735503PC265009983708000 - No such file or directory
+[Sun Nov 10 15:06:32 2019] 85.119.151.252:61255 Invalid request (Malformed HTTP request)
+[Sun Nov 10 15:06:37 2019] 85.119.151.251:49881 Invalid request (Malformed HTTP request)
+[Sun Nov 10 15:06:42 2019] 85.119.151.251:19647 Invalid request (Malformed HTTP request)
+[Sun Nov 10 19:06:35 2019] 5.178.86.74:3275 [404]: http://check.best-proxies.ru/azenv.php?s=157341279575662PC265009983708000 - No such file or directory
+[Sun Nov 10 19:06:40 2019] 5.178.86.74:36797 Invalid request (Malformed HTTP request)
+[Sun Nov 10 19:06:45 2019] 5.178.86.76:20797 Invalid request (Malformed HTTP request)
+[Sun Nov 10 19:06:50 2019] 5.178.86.74:64159 Invalid request (Malformed HTTP request)
+[Sun Nov 10 21:45:32 2019] 139.162.79.87:53162 [404]: / - No such file or directory
+[Sun Nov 10 23:06:27 2019] 5.178.86.76:15829 [404]: http://check.best-proxies.ru/azenv.php?s=157342718779922PC265009983708000 - No such file or directory
+[Sun Nov 10 23:06:33 2019] 5.178.86.78:36169 Invalid request (Malformed HTTP request)
+[Sun Nov 10 23:06:37 2019] 5.178.86.78:53633 Invalid request (Malformed HTTP request)
+[Sun Nov 10 23:06:43 2019] 5.178.86.78:12239 Invalid request (Malformed HTTP request)
+[Mon Nov 11 03:06:22 2019] 5.178.86.78:5749 [404]: http://check.best-proxies.ru/azenv.php?s=157344158265885PC265009983708000 - No such file or directory
+[Mon Nov 11 03:06:27 2019] 5.178.86.76:40475 Invalid request (Malformed HTTP request)
+[Mon Nov 11 03:06:32 2019] 5.178.86.74:61515 Invalid request (Malformed HTTP request)
+[Mon Nov 11 03:06:37 2019] 5.178.86.78:25625 Invalid request (Malformed HTTP request)
+[Mon Nov 11 04:39:44 2019] 74.125.212.26:62339 [200]: /signup_frontend.php
+[Mon Nov 11 04:39:44 2019] 74.125.212.26:49930 [404]: /favicon.ico - No such file or directory
+[Mon Nov 11 06:23:43 2019] PHP Warning:  Unknown: php_network_getaddresses: getaddrinfo failed: Name or service not known in Unknown on line 0
+[Mon Nov 11 06:23:43 2019] Failed to listen on 157.425.80.125:8000 (reason: php_network_getaddresses: getaddrinfo failed: Name or service not known)
+[Mon Nov 11 06:24:11 2019] 115.99.170.181:50678 [200]: /signup_frontend.php
+[Mon Nov 11 06:24:18 2019] 115.99.170.181:50676 [404]: /favicon.ico - No such file or directory
+[Mon Nov 11 06:24:44 2019] 115.99.170.181:50714 [200]: /login_frontend.php
+[Mon Nov 11 06:25:23 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Mon Nov 11 06:25:23 2019] 115.99.170.181:50720 [200]: /login_backend.php
+[Mon Nov 11 06:48:06 2019] 115.99.170.181:50968 [200]: /signup_frontend.php
+[Mon Nov 11 07:06:27 2019] 5.178.86.76:52407 [404]: http://check.best-proxies.ru/azenv.php?s=157345598725971PC265009983708000 - No such file or directory
+[Mon Nov 11 07:06:32 2019] 5.178.86.76:59809 Invalid request (Malformed HTTP request)
+[Mon Nov 11 07:06:37 2019] 5.178.86.76:26987 Invalid request (Malformed HTTP request)
+[Mon Nov 11 07:06:42 2019] 5.178.86.74:37603 Invalid request (Malformed HTTP request)
+[Mon Nov 11 07:11:49 2019] 115.99.170.181:43728 [200]: /signup_frontend.php
+[Mon Nov 11 07:11:50 2019] 115.99.170.181:43726 [404]: /favicon.ico - No such file or directory
+[Mon Nov 11 07:12:28 2019] 115.99.170.181:43744 [200]: /login_frontend.php
+[Mon Nov 11 07:12:39 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Mon Nov 11 07:12:39 2019] 115.99.170.181:43750 [200]: /login_backend.php
+[Mon Nov 11 07:13:32 2019] 115.99.170.181:43760 [200]: /login_frontend.php
+[Mon Nov 11 07:13:39 2019] 115.99.170.181:43762 [200]: /login_backend.php
+[Mon Nov 11 07:13:49 2019] 115.99.170.181:43772 [200]: /login_frontend.php
+[Mon Nov 11 07:14:01 2019] PHP Notice:  session_start(): A session had already been started - ignoring in /var/www/html/stream/auth/login_backend.php on line 24
+[Mon Nov 11 07:14:01 2019] 115.99.170.181:43778 [200]: /login_backend.php
+[Mon Nov 11 07:56:11 2019] 46.19.198.70:40795 [404]: / - No such file or directory
+[Mon Nov 11 08:30:15 2019] 74.125.212.28:47003 [404]: /favicon.ico - No such file or directory
+[Mon Nov 11 10:01:17 2019] 115.99.43.35:39998 [200]: /signup_frontend.php
+[Mon Nov 11 11:06:26 2019] 5.178.86.78:2521 [404]: http://check.best-proxies.ru/azenv.php?s=157347038679615PC265009983708000 - No such file or directory
+[Mon Nov 11 11:06:31 2019] 5.178.86.78:27783 Invalid request (Malformed HTTP request)
+[Mon Nov 11 11:06:36 2019] 5.178.86.76:16029 Invalid request (Malformed HTTP request)
+[Mon Nov 11 11:06:41 2019] 5.178.86.78:44233 Invalid request (Malformed HTTP request)
+[Mon Nov 11 12:05:52 2019] 74.125.212.28:46265 [404]: /favicon.ico - No such file or directory
+[Mon Nov 11 12:25:54 2019] 178.137.82.62:29929 Invalid request (Malformed HTTP request)
+[Mon Nov 11 15:06:26 2019] 5.178.86.78:23403 [404]: http://check.best-proxies.ru/azenv.php?s=157348478615841PC265009983708000 - No such file or directory
+[Mon Nov 11 15:06:31 2019] 5.178.86.74:34821 Invalid request (Malformed HTTP request)
+[Mon Nov 11 15:06:36 2019] 5.178.86.78:60467 Invalid request (Malformed HTTP request)
+[Mon Nov 11 15:06:41 2019] 5.178.86.78:46613 Invalid request (Malformed HTTP request)
